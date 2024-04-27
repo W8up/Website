@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaret Wrintmore</title>
+    <link
+            rel="icon"
+            href="images/icon.png"
+            type="image/x-icon"
+        />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Jaret Wrintmore</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Dark Mode Toggle Button -->
+        <div class="custom-control custom-switch ml-auto" style="display:grid;     grid-template-columns: 2;">
+            <a>&#9728;</a>
+            <input type="checkbox" class="custom-control-input" id="darkModeToggle">
+            <label class="custom-control-label" for="darkModeToggle">&#127769;</label>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container center">
+            <h2 class="text-center">About Me</h2>
+            <img src="images/Jaret_Portrait.jpg"  class="scaled-image rounded-image" alt="Photo of Jaret Wrintmore">
+            <p class="text-center">Write something about yourself here.</p>
+        </div>
+    </section>
+
+    <hr style="height: 4px; background-color: #777; width: 75%;" class="rounded-image">
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Portfolio</h2>
+            <div class="row">
+                <!-- Add your portfolio items here -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Distibuted File System</h5>
+                            <p class="card-text">A file distribution and balancing system to automatically create x amount of redundant copies of your files across n amount of DStores.</p>
+                            <a href="https://github.com/W8up/COMP2207CW" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">Description of project 2.</p>
+                            <a href="#project2" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text">Description of project 3.</p>
+                            <a href="#project3" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Links Section -->
+    <section id="social" class="py-5 bg-dark text-white">
+        <div class="container text-center">
+            <h2>Connect with Me</h2>
+            <div class="social-links mt-3">
+                <a href="https://github.com/w8up" target="_blank" class="social-link">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a href="https://www.facebook.com/jaret.wrintmore" target="_blank" class="social-link">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <!-- <a href="https://discordapp.com/invite/yourinvite" target="_blank" class="social-link">
+                    <i class="fab fa-discord fa-2x"></i>
+                </a> -->
+                <a href="https://steamcommunity.com/id/jaretwrintmore" target="_blank" class="social-link">
+                    <i class="fab fa-steam fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Contact Me</h2>
+            <p class="text-center">You can reach out to me using the form below.</p>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <form action="contact.php" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            &copy; 2024 Jaret Wrintmore Tel: +44 7516 586963 Email: <a href="mailto:jaret.wrintmore@gmail.com">Jaret.Wrintmore@gmail.com</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Dark Mode Toggle Script -->
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const cards = document.getElementsByClassName('card');
+        const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+        // Check if the user prefers dark mode
+        if (darkModeMediaQuery.matches) {
+            // Dark mode preferred
+            // Add your dark mode styles or toggle dark mode here
+            console.log("Dark mode is preferred by the user.");
+            darkModeToggle.checked = true;
+            darkmode();
+        } else {
+            // Light mode preferred
+            // Add your light mode styles or toggle light mode here
+            console.log("Light mode is preferred by the user.");
+            darkModeToggle.checked = false;
+            lightmode();
+        }
+
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                darkmode();
+            } else {
+                lightmode();
+            }
+        });
+
+        function darkmode() {
+            document.body.style.color = '#fff';
+            document.body.style.backgroundColor = '#222';
+            const elms = [...cards];
+            elms.forEach(i => {
+                i.style.color = '#fff';
+                i.style.backgroundColor = '#333'
+                // Additional styles for other elements can be added here
+            });
+        }
+
+        function lightmode() {
+            document.body.style.backgroundColor = '#fff';
+            document.body.style.color = '#000';
+            const elms = [...cards];
+            elms.forEach(i => {
+                i.style.color = '#000';
+                i.style.backgroundColor ='#fff';
+                // Additional styles for other elements can be added here
+            });
+        }
+    </script>
+</body>
+
+</html>

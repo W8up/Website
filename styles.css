@@ -1,0 +1,15 @@
+
+.scaled-image {
+    width: 25%;
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.rounded-image {
+    border-radius: 25px; /* Adjust the value to change the roundness of the corners */
+}
